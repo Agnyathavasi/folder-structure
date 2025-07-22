@@ -2,14 +2,18 @@
   "name": "folder-structure",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://agnyathavasi.github.io/folder-structure",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
